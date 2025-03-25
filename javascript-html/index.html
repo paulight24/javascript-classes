@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Counter</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="blacklist-params">
+            <span>Blacklisted words: </span>
+            <input class="blacklisted-words" value="advertising, sale, drugs" />
+        </div>
+        <div class="message-area">
+            <span>Message to be checked: </span>
+            <textarea class="message" rows="4" cols="50">This is a sample of NoN AdvertIsIng text.</textarea>
+        </div>
+
+        <p>
+            <button type="button" id="check-message-btn">Check message</button>
+        </p>
+        <p>
+            <span class="allowed hidden">This message is not blacklisted.</span>
+            <span class="blacklisted hidden">This message is blacklisted.</span>
+        </p>
+    </div>
+
+    <script>
+        let random = Math.random();
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "script.js";
+        document.getElementsByTagName("head")[0].append(s);
+
+        setTimeout(function () {
+            window.blacklister.init();
+        }, 1500);
+    </script>
+</body>
+
+</html>

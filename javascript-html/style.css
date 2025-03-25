@@ -1,0 +1,28 @@
+body {
+    background: #FFF;
+}
+
+.main {
+    margin: 10px;
+}
+
+span {
+    display: block;
+    margin: 10px 0;
+}
+
+.message-area {
+    margin-top: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.blacklisted {
+    color: firebrick;
+}
+
+.allowed {
+    color: green;
+}
